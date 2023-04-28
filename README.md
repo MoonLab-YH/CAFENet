@@ -1,12 +1,15 @@
 # CAFENet
 Official Pytorch implementation for the paper titled "CAFENet: Class-Agnostic Few-Shot Edge Detection Network" presented on BMVC 2021.
 
-Obtaining concentration parameter $\alpha$             |  Calculation of epistemic uncertainty with sampling
+
+Network architecture overview of proposed CAFENet             |  Qualitative Results on the SBD-5i Dataset.
 :-------------------------:|:-------------------------:
-![Network_Overview](https://user-images.githubusercontent.com/54431060/235067420-baa7b275-21ff-40b0-9a98-ff04a716f1f4.png)  |  [Examples](https://user-images.githubusercontent.com/54431060/235067604-575ba02b-197d-4602-a4e1-0478ac5ade4c.png)
+![Network_Overview](https://user-images.githubusercontent.com/54431060/235067420-baa7b275-21ff-40b0-9a98-ff04a716f1f4.png)  | ![image](https://user-images.githubusercontent.com/54431060/235068437-a6b53f39-ed83-4e99-b00c-ad20c837e6ef.png)
 
 # Abstract
-Despite the huge success of object detection, the training process still requires an immense amount of labeled data. Although various active learning solutions for object detection have been proposed, most existing works do not take advantage of epistemic uncertainty, which is an important metric for capturing the usefulness of the sample. Also, previous works pay little attention to the attributes of each bounding box (e.g., nearest object, box size) when computing the informativeness of an image. In this paper, we propose a new active learning strategy for object detection that overcomes the shortcomings of prior works. To make use of epistemic uncertainty, we adopt evidential deep learning (EDL) and propose a new module termed model evidence head (MEH), that makes EDL highly compatible with object detection. Based on the computed epistemic uncertainty of each bounding box, we propose hierarchical uncertainty aggregation (HUA) for obtaining the informativeness of an image. HUA realigns all bounding boxes into multiple levels based on the attributes and aggregates uncertainties in a bottom-up order, to effectively capture the context within the image. Experimental results show that our method outperforms existing state-of-the-art methods by a considerable margin.
+We tackle a novel few-shot learning challenge, few-shot semantic edge detection, aiming to localize boundaries of novel categories using only a few labeled samples.
+Reliable boundary information has been shown to boost the performance of semantic segmentation and localization, while also playing a key role in its own right in object reconstruction, image generation and medical imaging. However, existing semantic edge detection techniques require a large amount of labeled data to train a model. To overcome this limitation, we present Class-Agnostic Few-shot Edge detection Network (CAFENet) based on a meta-learning strategy. CAFENet employs a semantic segmentation module in small-scale to compensate for the lack of semantic information in edge labels. To effectively fuse the semantic information and low-level cues, CAFENet also utilizes an attention module which dynamically generates multi-scale attention map, as well as a novel regularization method that splits high-dimensional features into several low-dimensional features and conducts multiple metric learning. Since there are no existing datasets for few-shot semantic edge detection, we construct two new datasets, FSE-1000 and SBD-5i, and evaluate the performance of the proposed CAFENet on them. Extensive simulation results confirm that CAFENet achieves better performance compared to the baseline methods using fine-tuning or few-shot segmentation.
+
 
 # Environment Info
 ```
