@@ -28,11 +28,9 @@ FSE-1000 : [download here](https://drive.google.com/file/d/1YRZiJMCvGekrsEB_emVO
 
 # Running Code
 ```
-#For RetinaNet 
+#For FSE-1000 
 
-python tools/train_RetinaNet.py     --gpu-ids {GPU device number}
-                                    --work_dir {dir to save logs and models}
-                                    --config {train config file path}                             
+python FSE-1000/train.py                              
                                     
 #For SSD
 
