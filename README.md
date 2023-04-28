@@ -15,15 +15,11 @@ Reliable boundary information has been shown to boost the performance of semanti
 ```
 sys.platform: linux
 
-Python: 3.7.10 (default, Jun  4 2021, 14:48:32) [GCC 7.5.0]  
+Python: 3.7.7
 Pytorch : 1.5.0  
-TorchVision: 0.6.0  
+TorchVision: 0.6.1
 Cudatoolkit : 10.1.243  
-OpenCV: 4.5.2  
-MMCV: 1.3.8  
-MMDetection: 2.13.0  
-MMDetection Compiler: GCC 7.3  
-MMDetection CUDA Compiler: 10.1  
+scikit-learn : 0.23.2
 ```
 
 # Running Code
