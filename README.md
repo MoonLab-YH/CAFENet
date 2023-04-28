@@ -20,6 +20,7 @@ Pytorch : 1.5.0
 TorchVision: 0.6.1
 Cudatoolkit : 10.1.243  
 scikit-learn : 0.23.2
+numpy : 1.19.0
 ```
 
 # Running Code
