@@ -31,14 +31,11 @@ SBD-5i   : [download here](https://drive.google.com/file/d/1KCYDo9V18l_Ms_pxdkyU
 ```
 #For FSE-1000 
 
-python FSE-1000/train.py                              
+python FSE-1000.trainpy                              
                                     
 #For SSD
 
-python tools/train_SSD.py           --gpu-ids {GPU device number}
+python SSD_train.py           --gpu-ids {GPU device number}
                                     --work_dir {dir to save logs and models}
                                     --config {train config file path}     
 ```
-
-# Acknowledgement
-Our code is based on the implementations of [Multiple Instance Active Learning for Object Detection](https://github.com/yuantn/MI-AOD).
