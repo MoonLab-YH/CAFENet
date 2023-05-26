@@ -31,7 +31,7 @@ SBD-5i   : [download here](https://drive.google.com/file/d/1KCYDo9V18l_Ms_pxdkyU
 ```
 #For FSE-1000 
 
-python FSE-1000.trainpy                              
+python FSE-1000.train.py                              
                                     
 #For SSD
 
